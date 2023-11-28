@@ -1,4 +1,4 @@
-<h1>Olá Mundo! Aqui é o projeto Meu Shape</h1>
+<h1>projeto Meu Shape</h1>
 
 <p>"A saúde é a maior riqueza"</p>
 
