@@ -18,9 +18,9 @@
 
 <p>O Meu Shape foi desenvolvido usando uma variedade de tecnologias modernas, incluindo:</p>
 
-- JavaScript para a lógica do lado do cliente
-- Python para o backend e processamento de dados
-- MySQL para o armazenamento de dados
+- Java para a lógica do lado do cliente
+- Java para o backend e processamento de dados
+- Firebase para o armazenamento de dados
 - Git para controle de versão
 - GitHub para hospedagem de código e colaboração
 - Várias APIs para fornecer dados e funcionalidades adicionais
