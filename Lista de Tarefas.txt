@@ -1,0 +1,8 @@
+Tarefas: 
++criar o grupo aqui. no whatsapp e discord.✅
++criar um git com nome de projeto e separar parte por parte. ✅
++decidir o tema ✅
++definir os requisitos do projeto.❌
++buscar referencia do requisito do projeto ❌
++Engenharia reversa de algum aplicativos  modelo❌
++decidir proxima proximas passo❌
