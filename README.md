@@ -28,14 +28,15 @@
 
 <h2>Conclusão do Projeto</h2>
 
-<p>Estamos orgulhosos do trabalho que realizamos no Meu Shape e estamos animados para ver como ele ajudará as pessoas a atingir seus objetivos de fitness. Continuaremos a melhorar e expandir o aplicativo com base no feedback dos usuários e nas últimas pesquisas em fitness e bem-estar.</p>
+<p>Estamos orgulhosos do trabalho que realizamos no Meu Shape e estamos animados para ver como ele ajudará as pessoas a atingir seus objetivos de fitness.<p> 
+<p>  Continuaremos a melhorar e expandir o aplicativo com base no feedback dos usuários e nas últimas pesquisas em fitness e bem-estar.</p>
 
 <h2>Créditos</h2>
 
 <p>Este projeto foi possível graças ao trabalho árduo e dedicação de nossa equipe de desenvolvimento.</p>
 
-<p> Trabalho feito pelo trio:
-https://github.com/ElissonNadson
-https://github.com/Jemima-Santos
-https://github.com/Sjr0405<p>        
+<p> Trabalho feito pelo trio:<p> 
+<p> https://github.com/ElissonNadson<p> 
+<p> https://github.com/Jemima-Santos<p> 
+<p> https://github.com/Sjr0405<p>        
   
