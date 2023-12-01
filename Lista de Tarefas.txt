@@ -1,8 +1,9 @@
 Tarefas: 
-+criar o grupo aqui. no whatsapp e discord.✅
-+criar um git com nome de projeto e separar parte por parte. ✅
-+decidir o tema ✅
++criar o grupo aqui. no whatsapp e discord.✅ ( Nadson e samuel) 
++criar um git com nome de projeto e separar parte por parte. ✅ (nadson)
++decidir o tema ✅ (todos) 
 +definir os requisitos do projeto.❌
 +buscar referencia do requisito do projeto ❌
 +Engenharia reversa de algum aplicativos  modelo❌
 +decidir proxima proximas passo❌
++fazer figma ❌
