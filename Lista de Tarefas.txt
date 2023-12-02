@@ -7,3 +7,8 @@ Tarefas:
 +Engenharia reversa de algum aplicativos  modelo❌
 +decidir proxima proximas passo❌
 +fazer figma ❌
+
+
+Trocar nome para AquaStride
+
+"Aqua", significa água, com "Stride", que significa passo ou caminhar. O nome sugere uma jornada ativa e hidratada, destacando tanto a importância da hidratação quanto do movimento, alinhando-se com a proposta do aplicativo de rastrear a ingestão de água e a atividade física, especialmente os passos dados.
