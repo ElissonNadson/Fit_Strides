@@ -25,6 +25,7 @@
         android:text="@string/fitstrides"
         style="@style/fitstrides"
         android:textAlignment="center"
+        android:fontFamily="@font/montserratbold"
         />
 
     <TextView
@@ -33,5 +34,7 @@
         android:layout_height="37dp"
         android:text="@string/o_parceiro_"
         android:textAlignment="center"
-        android:textStyle="bold" />
+        android:fontFamily="@font/montserratbold"
+        />
+
 </LinearLayout>
