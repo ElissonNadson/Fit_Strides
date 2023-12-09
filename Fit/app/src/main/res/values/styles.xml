@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- styles.xml -->
+    <style name="fitstrides">
+        <item name="android:textSize">43sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAppearance"></item>
+    </style>
+
+    <!-- styles.xml -->
+    <style name="o_parceiro_">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

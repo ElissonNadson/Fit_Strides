@@ -44,4 +44,15 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_tela_logo">TelaLogo</string>
+
+    <!-- strings.xml -->
+    <string name="fitstrides">
+        FitStrides
+    </string>
+
+    <!-- strings.xml -->
+    <string name="o_parceiro_">
+        O parceiro para uma jornada saudavel
+    </string>
+
 </resources>

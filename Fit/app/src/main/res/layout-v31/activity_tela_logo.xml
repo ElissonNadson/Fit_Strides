@@ -5,10 +5,19 @@
     android:id="@+id/tela_1_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToOutline="true"
     android:background="#07A4DA"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     >
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <!-- drawable/logo.xml -->
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
 
     <View
         android:id="@+id/logo"
@@ -21,8 +30,12 @@
         android:id="@+id/fitstrides"
         android:layout_width="327dp"
         android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="@+id/logo"
-        android:fontFamily="@font/"
+        android:fontFamily="@font/Montserrat-Thin.ttf"
+        android:gravity="center_horizontal|top"
+        android:lineHeight="52dp"
         android:text="@string/fitstrides"
         android:textAppearance="@style/fitstrides"
         />
@@ -32,6 +45,8 @@
         android:layout_width="239dp"
         android:layout_height="15dp"
         android:fontFamily="@font/montserrat-bold"
+        android:gravity="center_horizontal|top"
+        android:lineHeight="15dp"
         android:text="@string/o_parceiro_"
         android:textAppearance="@style/o_parceiro_"
         android:textStyle="bold"/>
