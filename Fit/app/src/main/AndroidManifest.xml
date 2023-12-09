@@ -29,9 +29,15 @@
             android:exported="false" />
         <activity
             android:name=".TelaLogo"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_tela_logo"
-            android:theme="@style/Theme.Fit" />
+            android:theme="@style/Theme.Fit" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".FormLogin"
             android:exported="false"
@@ -39,12 +45,7 @@
             android:theme="@style/Theme.Fit" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false" >
         </activity>
     </application>
 

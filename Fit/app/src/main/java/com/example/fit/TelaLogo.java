@@ -8,7 +8,7 @@ import android.content.Intent;
 
 public class TelaLogo extends AppCompatActivity {
 
-    private static final int TEMPO_DE_CARREGAMENTO = 5000;
+    private static final int TEMPO_DE_CARREGAMENTO = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

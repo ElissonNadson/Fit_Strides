@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Auto layout, variables, and unit scale are not yet supported -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tela_1_logo"
@@ -7,10 +6,7 @@
     android:layout_height="match_parent"
     android:background="#07A4DA"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:paddingBottom="20dp">
-
->
+    android:gravity="center_horizontal">
 
     <View
         android:id="@+id/logo"
@@ -23,21 +19,24 @@
         android:id="@+id/fitstrides"
         android:layout_width="327dp"
         android:layout_height="72dp"
-        android:layout_marginTop="@+id/logo"
+        android:layout_marginTop="20dp"
         android:text="@string/fitstrides"
         style="@style/fitstrides"
         android:textAlignment="center"
         android:fontFamily="@font/montserratbold"
-        />
+        android:textColor="#FFFFFF"/>
+
 
     <TextView
         android:id="@+id/o_parceiro_"
         android:layout_width="239dp"
         android:layout_height="37dp"
+        android:layout_marginTop="20dp"
         android:text="@string/o_parceiro_"
         android:textAlignment="center"
         android:fontFamily="@font/montserratbold"
-        />
+        android:textColor="#FFFFFF"/>
+
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -45,7 +44,4 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"/>
-
-
-
 </LinearLayout>
