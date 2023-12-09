@@ -4,32 +4,30 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_form_login.xml">
+        <config>
+          <theme>@style/Theme.Fit</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tela_cadastro02.xml">
+        <config>
+          <theme>@style/Theme.Fit</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_tela_logo.xml">
+        <config>
+          <theme>@style/Theme.Fit</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bd4184f-0510-4fb5-845e-6e9f9c2629d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/Montserrat-VariableFont_wght.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/montserrat-bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/font/montserratbold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_logo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_logo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_cadastro02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_cadastro02.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
