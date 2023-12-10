@@ -55,4 +55,40 @@
         O parceiro para uma jornada saudavel
     </string>
 
+    <string name="aquastride">
+    AquaStride
+    </string>
+
+    <string name="sing_up">
+    Cadastro
+    </string>
+
+    <string name="name">
+    Nome Completo
+    </string>
+
+    <string name="email">
+    Email
+    </string>
+
+    <string name="phone">
+    Telefone
+    </string>
+
+    <string name="password">
+    Senha
+    </string>
+
+    <string name="gender">
+    Gênero
+    </string>
+
+    <string name="Male">
+    Masculino
+    </string>
+
+    <string name="Female">
+    Feminino
+    </string>
+
 </resources>

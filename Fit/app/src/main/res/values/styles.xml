@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- styles.xml -->
     <style name="fitstrides">
         <item name="android:textSize">43sp</item>
         <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAppearance"/>
     </style>
 
-    <!-- styles.xml -->
+
     <style name="o_parceiro_">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="aquastride">
+        <item name="android:textSize">43sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <style name="sing_up">
+        <item name="android:textSize">50dp</item>
+        <item name="android:textColor">#A1A1A1</item>
+    </style>
+
+    <style name="phone_email">
+        <item name="android:textSize">13.47sp</item>
+        <item name="android:textColor">#000000</item>
     </style>
 
 </resources>

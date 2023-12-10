@@ -1,15 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Auto layout, variables, and unit scale are not yet supported -->
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tela_7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipToOutline="true"
-    android:background="#FFFFFF"
-    android:orientation="vertical"
-    >
+    android:padding="16dp">
 
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
 
+    <TextView
+        android:id="@+id/title_fit_strides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fit Strides"
+        android:textSize="30sp"
+        android:layout_below="@id/back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
+    <TextView
+        android:id="@+id/title_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textSize="24sp"
+        android:layout_below="@id/title_fit_strides"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Repita o seguinte padrão para idade, altura e peso -->
+    <TextView
+        android:id="@+id/text_select_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione sua idade"
+        android:layout_below="@id/title_cadastro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/age_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/text_select_age"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_calendar"/>
+
+        <EditText
+            android:id="@+id/age_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="Idade"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/age_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_arrow_up"
+                android:text=" "/>
+
+            <Button
+                android:id="@+id/age_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_arrow_down"
+                android:text=" "/>
+        </LinearLayout>
     </LinearLayout>
+
+    <!-- Adicione os seletores de altura e peso aqui -->
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:background="#0070E0"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>

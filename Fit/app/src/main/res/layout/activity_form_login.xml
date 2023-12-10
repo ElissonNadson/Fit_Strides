@@ -1,9 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormLogin">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="100dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/iconeperfil" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/iconecadeado" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Senha"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/remember_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lembre-me"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Esqueceu a senha?"
+            android:textColor="#FF6200EE" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/senaoforregistrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se não for registrado"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="REGISTRE-SE"
+        android:textColor="#0070E0" />
+
+</LinearLayout>
