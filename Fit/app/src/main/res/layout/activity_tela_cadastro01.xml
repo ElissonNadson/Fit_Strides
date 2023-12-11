@@ -40,20 +40,21 @@
 
 
     <EditText
-        android:id="@+id/input"
+        android:id="@+id/edit_nocompleto"
         android:hint="@string/name"
         android:textColorHint="@color/black"
         android:layout_width="336.94dp"
         android:layout_height="54dp"
         android:background="@drawable/input"
         android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="20dp"
         android:paddingStart="16dp"
     />
 
 
     <EditText
-        android:id="@+id/input2"
+        android:id="@+id/edit_email"
         android:hint="@string/email"
         android:textColorHint="@color/black"
         android:layout_width="336.94dp"
@@ -65,23 +66,11 @@
 
         />
 
-    <EditText
-        android:id="@+id/input3"
-        android:hint="@string/phone"
-        android:textColorHint="@color/black"
-        android:layout_width="336.94dp"
-        android:layout_height="54dp"
-        android:layout_gravity="center"
-        android:background="@drawable/input"
-        android:layout_marginBottom="20dp"
-        android:paddingStart="16dp"
-
-        />
 
 
 
     <EditText
-        android:id="@+id/input4"
+        android:id="@+id/edit_senha"
         android:hint="@string/password"
         android:textColorHint="@color/black"
         android:layout_width="336.94dp"
@@ -93,17 +82,7 @@
 
         />
 
-    <EditText
-        android:id="@+id/input5"
-        android:layout_width="336.94dp"
-        android:layout_height="54dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/input"
-        android:hint="@string/gender"
-        android:textColorHint="@color/black"
-        android:paddingStart="16dp"
-        />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -125,14 +104,14 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radio_male"
+                android:id="@+id/rg_radio_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:text="Masculino" />
 
             <RadioButton
-                android:id="@+id/radio_female"
+                android:id="@+id/rg_radio_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Feminino" />
@@ -140,11 +119,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button_continue"
+        android:id="@+id/bt_continuecadastro"
         android:layout_width="336dp"
         android:layout_height="56dp"
         android:layout_gravity="center"
-        android:text="Continue"
+        android:layout_marginTop="50dp"
+        android:text="Continue cadastro"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:color="#1EACDE"

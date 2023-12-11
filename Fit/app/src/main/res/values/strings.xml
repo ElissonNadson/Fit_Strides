@@ -103,5 +103,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_activity_teste2">teste2</string>
+    <string name="title_activity_teste3">teste3</string>
 
 </resources>
