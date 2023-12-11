@@ -74,15 +74,19 @@
             android:layout_marginStart="10dp"
             />
 
-        <TextView
+        <Button
             android:id="@+id/forgot_password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="end"
             android:text="Esqueceu a senha?"
             android:textColor="#FF6200EE" />
+
     </LinearLayout>
 
 
@@ -101,12 +105,16 @@
         android:textColor="@color/black"
         android:layout_marginTop="16dp"/>
 
-    <TextView
+    <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="REGISTRE-SE"
-        android:textColor="#0070E0" />
+        android:textColor="#0070E0"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
 
 </LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".TelaRedefinirSenha02">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/esqueceusuasenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Redefinição de Senha"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/instrucao_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Um e-mail com um código de verificação acaba de ser enviado para:"
+        android:textSize="16dp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/emailexemplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="examp********************.com"
+        android:textSize="20dp"
+        android:padding="16dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/code_digit_1"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:background="@drawable/square_border"/>
+        <EditText
+            android:id="@+id/code_digit_2"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/square_border"/>
+        <EditText
+            android:id="@+id/code_digit_3"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/square_border"/>
+        <EditText
+            android:id="@+id/code_digit_4"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/square_border"/>
+        <EditText
+            android:id="@+id/code_digit_5"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/square_border"/>
+        <EditText
+            android:id="@+id/code_digit_6"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/square_border"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:text="Verificar Código"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/botao_arrendodado"
+        android:onClick="onVerifyCodeClicked" />
+
+
+</LinearLayout>

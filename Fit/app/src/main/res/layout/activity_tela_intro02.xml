@@ -26,9 +26,9 @@
             android:id="@+id/titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Corra, se não o cachorro pega!"
+            android:text="Conte seus passos!"
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
@@ -36,11 +36,10 @@
 
     <ImageButton
         android:id="@+id/botaoProximaTela"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/botaoseta"
-        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
-        />
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/botaoseta" />
 
 </LinearLayout>

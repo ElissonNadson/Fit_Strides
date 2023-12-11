@@ -26,9 +26,9 @@
             android:id="@+id/titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hidrate-se, beba água!"
+            android:text="Beba Agua!"
             android:textColor="#FFFFFF"
-            android:textSize="24sp"
+            android:textSize="40sp"
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
