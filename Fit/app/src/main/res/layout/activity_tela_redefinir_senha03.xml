@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".TelaRedefinirSenha03">
+    tools:context=".TelaRedefinirSenha03"
+    android:onClick="voltarOnClick" >
 
     <ImageButton
         android:id="@+id/back_button"
