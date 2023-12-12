@@ -8,10 +8,6 @@ import android.view.View;
 
 public class TelaRedefinirSenha01 extends AppCompatActivity {
 
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +16,6 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
 
     // Método chamado quando o botão Voltar é clicado
     public void voltarOnClick(View view) {
-        // Navega de volta para a tela de login
         startActivity(new Intent(this, FormLogin.class));
     }
 

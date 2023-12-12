@@ -2,33 +2,50 @@ package com.example.fit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.example.fit.databinding.ActivityFormLoginBinding;
+import android.view.View;
+import android.widget.Button;
 
 public class FormLogin extends AppCompatActivity {
 
-    private ActivityFormLoginBinding binding;
+    private Button bt_entrar, bt_redefinirSenha, bt_register;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityFormLoginBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        setContentView(R.layout.activity_form_login);
 
-        // Navega para a página Home ao clicar no botão Entrar
-        binding.btEntrar.setOnClickListener(v -> {
-            startActivity(new Intent(this, home.class));
+        // Inicializa os botões
+        bt_entrar = findViewById(R.id.bt_entrar);
+        bt_redefinirSenha = findViewById(R.id.bt_redefinirSenha);
+        bt_register = findViewById(R.id.bt_register);
+
+        // Define os ouvintes de clique para os botões
+        bt_entrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navega para a tela Home
+                startActivity(new Intent(FormLogin.this, home.class));
+            }
         });
 
-        // Navega para a página de redefinição de senha ao clicar no botão Redefinir senha
-        binding.btRedefinirsenha.setOnClickListener(v -> {
-            startActivity(new Intent(this, TelaRedefinirSenha01.class));
+        bt_redefinirSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navega para a tela de redefinição de senha
+                startActivity(new Intent(FormLogin.this, TelaRedefinirSenha01.class));
+            }
         });
 
-        // Navega para a página de cadastro ao clicar no botão Registre-se
-        binding.btRegister.setOnClickListener(v -> {
-            startActivity(new Intent(this, TelaCadastro01.class));
+        bt_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navega para a tela de cadastro
+                startActivity(new Intent(FormLogin.this, TelaCadastro01.class));
+            }
         });
     }
 }

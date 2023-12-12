@@ -17,7 +17,7 @@ public class TelaRedefinirSenha03 extends AppCompatActivity {
     // Método chamado quando o botão Voltar é clicado
     public void voltarOnClick(View view) {
         // Navega de volta para a tela anterior de redefinição de senha
-        startActivity(new Intent(this, TelaRedefinirSenha02.class));
+        startActivity(new Intent(this, FormLogin.class));
     }
 
     // Método chamado quando o botão Redefinir Senha é clicado
@@ -25,6 +25,6 @@ public class TelaRedefinirSenha03 extends AppCompatActivity {
         // Aqui você pode adicionar a lógica para redefinir a senha do usuário
         // Por exemplo, validar as senhas, atualizar no banco de dados, etc.
         // Após a redefinição bem-sucedida, você pode navegar para a tela de login ou home
-        startActivity(new Intent(this, FormLogin.class)); // ou outra tela conforme necessário
+        startActivity(new Intent(this, TelaRedefinirSenha04.class)); // ou outra tela conforme necessário
     }
 }

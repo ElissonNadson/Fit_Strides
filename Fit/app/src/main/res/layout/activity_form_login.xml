@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center_horizontal"
-    android:layout_marginTop="100dp">
+    >
 
 
     <TextView
@@ -14,13 +14,14 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="24sp"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginTop="50dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:layout_marginTop="130dp">
 
         <ImageView
             android:layout_width="24dp"
@@ -75,7 +76,7 @@
             />
 
         <Button
-            android:id="@+id/bt_redefinirsenha"
+            android:id="@+id/bt_redefinirSenha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
@@ -119,12 +120,13 @@
         android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
         android:focusable="true"
-        android:onClick="registrarOnClick" />
+        android:onClick="registrarOnClick"
+        />
 
     />
 
     <ProgressBar
-        android:id="@+id/progressBar2"
+        android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
