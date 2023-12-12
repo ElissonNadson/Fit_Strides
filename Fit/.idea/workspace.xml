@@ -27,19 +27,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bd4184f-0510-4fb5-845e-6e9f9c2629d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/fit/FormLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/fit/FormLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/fit/TelaRedefinirSenha01.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/fit/TelaRedefinirSenha01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/fit/TelaRedefinirSenha03.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/fit/TelaRedefinirSenha03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/fit/TelaCadastro01.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/fit/TelaCadastro01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/vector.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_form_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_form_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_cadastro01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_cadastro01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_cadastro02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_cadastro02.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_redefinir_senha01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_redefinir_senha01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_redefinir_senha02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_redefinir_senha02.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_redefinir_senha03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tela_redefinir_senha03.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,8 +131,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\AndroidStudio\Projetos\Fit_Strides\Fit\app" />
       <recent name="D:\AndroidStudio\Projetos\Fit_Strides\Fit\app\src\main\res\drawable" />
+      <recent name="D:\AndroidStudio\Projetos\Fit_Strides\Fit\app" />
       <recent name="C:\Users\ALUNO.SENAIESCOLA\Documents\GitHub\Fit_Strides\Fit\app\src\main\res\font" />
       <recent name="C:\Users\ALUNO.SENAIESCOLA\Documents\GitHub\Fit_Strides\Fit\app\src\main\res\drawable" />
     </key>
@@ -136,6 +140,9 @@
       <recent name="com.example.fit" />
     </key>
     <key name="android.template.46898301">
+      <recent name="com.example.fit" />
+    </key>
+    <key name="android.template.-1374949672">
       <recent name="com.example.fit" />
     </key>
     <key name="android.template.862324990">

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -7,20 +10,21 @@
     android:gravity="center">
 
     <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/vector"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"/>
-
+        android:id="@+id/bt_voltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/iconevoltar"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
     <TextView
         android:id="@+id/title_fit_strides"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fit Strides"
         android:textSize="54dp"
-        android:layout_below="@id/back_button"
+        android:layout_below="@id/bt_voltar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:textStyle="bold"

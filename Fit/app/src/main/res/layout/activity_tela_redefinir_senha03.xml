@@ -10,14 +10,14 @@
     android:onClick="voltarOnClick" >
 
     <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/vector"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp"
-        android:onClick="voltarOnClick"
-        />
+        android:id="@+id/bt_voltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/iconevoltar"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
 
     <TextView
         android:id="@+id/esqueceusuasenha"
