@@ -2,15 +2,16 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tela_7"
+    android:id="@+id/telacadastro01"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
     android:layout_gravity="center_horizontal">
 
+
     <ImageButton
-        android:id="@+id/botao_vetor"
+        android:id="@+id/botao_voltar"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
@@ -20,116 +21,117 @@
         android:scaleType="fitCenter"
         android:adjustViewBounds="true" />
 
+
     <TextView
-        android:id="@+id/aquastride"
+        android:id="@+id/titulo"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="30dp"
-        android:gravity="center_horizontal|center_vertical"
+        android:gravity="center"
         android:text="@string/fitstrides"
-        android:textAppearance="@style/aquastride"
         android:textStyle="bold" />
+
 
     <TextView
-        android:id="@+id/sing_up"
+        android:id="@+id/subtitulo"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_margin="@+id/aquastride"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/sing_up"
+        android:gravity="center"
+        android:text="@string/sign_up"
         android:textStyle="bold" />
 
 
     <EditText
-        android:id="@+id/edit_nomecompleto"
+        android:id="@+id/nome_completo"
         android:hint="@string/name"
         android:textColorHint="@color/black"
-        android:layout_width="336.94dp"
+        android:layout_width="match_parent"
         android:layout_height="54dp"
         android:background="@drawable/input"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="20dp"
-        android:paddingStart="16dp"
-    />
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp" />
 
 
     <EditText
-        android:id="@+id/edit_email"
+        android:id="@+id/email"
         android:hint="@string/email"
         android:textColorHint="@color/black"
-        android:layout_width="336.94dp"
+        android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:layout_gravity="center"
         android:background="@drawable/input"
-        android:layout_marginBottom="20dp"
-        android:paddingStart="16dp"
-
-        />
-
-
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp" />
 
 
     <EditText
-        android:id="@+id/edit_senha"
+        android:id="@+id/senha"
         android:hint="@string/password"
         android:textColorHint="@color/black"
-        android:layout_width="336.94dp"
+        android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:layout_gravity="center"
         android:background="@drawable/input"
-        android:layout_marginBottom="20dp"
-        android:paddingStart="16dp"
-
-        />
-
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="54dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="Gênero:" />
+            android:text="@string/gender" />
+
 
         <RadioGroup
-            android:id="@+id/gender_radio_group"
+            android:id="@+id/group_genero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:orientation="horizontal">
 
+
             <RadioButton
-                android:id="@+id/rg_radio_male"
+                android:id="@+id/radio_masculino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:text="Masculino" />
+                android:text="@string/male" />
+
 
             <RadioButton
-                android:id="@+id/rg_radio_female"
+                android:id="@+id/radio_feminino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Feminino" />
+                android:text="@string/female" />
         </RadioGroup>
     </LinearLayout>
 
     <Button
-        android:id="@+id/bt_continuecadastro"
-        android:layout_width="336dp"
+        android:id="@+id/botao_continuar"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:text="Continue cadastro"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/continue_registration"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:color="#1EACDE"
-        android:radius="28dp"/>
-        />
 
+        />
 </LinearLayout>

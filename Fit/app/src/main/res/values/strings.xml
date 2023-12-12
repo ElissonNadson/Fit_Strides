@@ -106,4 +106,15 @@
     <string name="title_activity_teste2">teste2</string>
     <string name="title_activity_teste3">teste3</string>
 
+
+
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="continue_registration">Continuar Cadastro</string>
+
+
+    <string name="sign_up">Cadastro</string>
+
+
+
 </resources>
