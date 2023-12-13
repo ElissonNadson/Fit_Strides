@@ -24,13 +24,16 @@
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:text="@string/fitstrides"
-        android:textStyle="bold" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_voltar"
+        android:layout_marginTop="16dp"
+        android:text="Fit Strides"
+        android:textSize="54dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
 
+        />
 
     <TextView
         android:id="@+id/subtitulo"

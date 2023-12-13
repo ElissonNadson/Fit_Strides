@@ -111,9 +111,12 @@
     <string name="male">Masculino</string>
     <string name="female">Feminino</string>
     <string name="continue_registration">Continuar Cadastro</string>
-
-
     <string name="sign_up">Cadastro</string>
+    <string name="voltar">Voltar</string>
+    <string name="selecionar_foto">Selecionar Foto</string>
+    <string name="finalizar_cadastro">Finalizar Cadastro</string>
+    <string name="icone_perfil_padrao_desc">Ícone de perfil padrão</string>
+    <string name="adicione_imagem_perfil">Adicione uma imagem de perfil tocando abaixo</string>
 
 
 
