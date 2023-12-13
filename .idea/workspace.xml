@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02bb908e-a032-496a-874a-eedc39d7272e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Fit/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Fit/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fit/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fit/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fit/app/src/main/res/drawable/ic_olho.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fit/app/src/main/res/layout/activity_form_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fit/app/src/main/res/layout/activity_form_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fit/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fit/app/src/main/res/values/strings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="02bb908e-a032-496a-874a-eedc39d7272e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

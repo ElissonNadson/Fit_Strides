@@ -17,7 +17,7 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
     private EditText editEmail;
     private ImageButton btVoltar;
     private Button btRedefinirSenha;
-    private Button btFazerLogin; // Botão para ir à tela de login
+    private Button btFazerLogin;
     private FirebaseAuth mAuth;
 
     @Override
@@ -52,7 +52,7 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
         btVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Fecha a tela atual e volta para a tela anterior
+                finish();
             }
         });
 
@@ -79,9 +79,9 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
                         "Instruções para redefinição de senha foram enviadas para seu e-mail.",
                         Toast.LENGTH_LONG).show();
 
-                // Faz o botão aparecer após o e-mail ser enviado com sucesso
-                btRedefinirSenha.setVisibility(View.GONE); // Esconde o botão de redefinição de senha
-                btFazerLogin.setVisibility(View.VISIBLE); // Mostra o botão Fazer Login
+
+                btRedefinirSenha.setVisibility(View.GONE);
+                btFazerLogin.setVisibility(View.VISIBLE);
             } else {
                 Toast.makeText(TelaRedefinirSenha01.this,
                         "Falha ao enviar e-mail de redefinição de senha.",

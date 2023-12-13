@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Top Bar Placeholder -->
     <TextView
         android:id="@+id/top_bar"
         android:layout_width="0dp"
@@ -20,75 +19,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Título do Consumo Diário -->
     <TextView
         android:id="@+id/tv_daily_water_consumption"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Consumo diário de água do dia!"
+        android:text="Meta de hidratação"
+        android:gravity="center"
+        android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/top_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ProgressBar Placeholder (Arc Progress Bar) -->
-    <ProgressBar
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
         android:id="@+id/progress_water_intake_arc"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:indeterminate="false"
-        app:layout_constraintDimensionRatio="1:1"
+        android:layout_width="257dp"
+        android:layout_height="214dp"
+        app:cpb_background_progressbar_color="#EEEEEE"
+        app:cpb_background_progressbar_width="7dp"
+        app:cpb_progress="75"
+        app:cpb_progress_max="100"
+        app:cpb_progressbar_color="#2196F3"
+        app:cpb_progressbar_width="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_daily_water_consumption"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_daily_water_consumption"
+        app:layout_constraintVertical_bias="0.119"
         tools:progress="75" />
 
-    <!-- Texto com a Quantidade Consumida/Meta Diária -->
     <TextView
         android:id="@+id/tv_water_intake_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0/3370ml"
+        android:text="1650/3300ml"
+        android:gravity="center"
         android:textSize="24sp"
+        android:textColor="#2196F3"
+        app:layout_constraintTop_toTopOf="@+id/progress_water_intake_arc"
         app:layout_constraintBottom_toBottomOf="@+id/progress_water_intake_arc"
         app:layout_constraintStart_toStartOf="@+id/progress_water_intake_arc"
         app:layout_constraintEnd_toEndOf="@+id/progress_water_intake_arc" />
 
-    <!-- Botão de Adição Rápida -->
     <Button
         android:id="@+id/button_quick_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
+        android:text="+ Adição Rápida"
         android:layout_marginTop="32dp"
         app:layout_constraintTop_toBottomOf="@+id/progress_water_intake_arc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Subtítulo da Meta Diária -->
-
-    <!-- Listagem dos Registros de Hoje -->
     <TextView
         android:id="@+id/tv_daily_goal_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Meta de bebida diária"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_quick_add" />
-
-    <TextView
-        android:id="@+id/tv_today_records"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registros de hoje +"
+        android:text="Seu Registro de Hoje"
         android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_quick_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_today_records"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@+id/tv_daily_goal_subtitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <!-- Aqui entraria sua ListView/RecyclerView para listagem dos registros -->
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
