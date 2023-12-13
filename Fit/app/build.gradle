@@ -58,4 +58,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.google.android.material:material:<versão_atual>'
 
+    // Firebase Firestore
+    implementation 'com.google.firebase:firebase-firestore:24.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+
 }

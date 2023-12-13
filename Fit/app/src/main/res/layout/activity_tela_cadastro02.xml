@@ -206,10 +206,10 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/continue_button"
+        android:id="@+id/botao_finalizar_cadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Continue"
+        android:text="Finalizar Cadastro"
         android:background="@drawable/botao_arrendodado"
         android:textColor="#FFFFFF"
         android:layout_alignParentBottom="true"

@@ -1,128 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".TelaRedefinirSenha02">
+    android:gravity="center_horizontal">
 
-    <ImageButton
-        android:id="@+id/bt_voltar"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/iconevoltar"
-        android:background="@android:color/transparent"
-        android:scaleType="fitCenter"
-        android:adjustViewBounds="true" />
     <TextView
-        android:id="@+id/esqueceusuasenha"
-        android:layout_width="match_parent"
+        android:id="@+id/text_redefinicao_senha"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
+        android:layout_marginTop="90dp"
         android:text="Redefinição de Senha"
-        android:textSize="20dp"
-        />
+        android:textSize="24sp"
+        android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/instrucao_email"
-        android:layout_width="match_parent"
+        android:id="@+id/text_senha_alterada"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:text="Um e-mail com um código de verificação acaba de ser enviado para:"
-        android:textSize="16dp"
-        android:padding="16dp"/>
+        android:layout_marginTop="160dp"
+        android:text="Sua senha foi alterada com sucesso"
+        android:textSize="23sp"/>
 
-    <TextView
-        android:id="@+id/emailexemplo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:gravity="center"
-        android:text="examp********************.com"
-        android:textSize="20dp"
-        android:padding="16dp"
-
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <EditText
-            android:id="@+id/code_digit_1"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:maxLength="1"
-            android:gravity="center"
-            android:background="@drawable/square_border"/>
-        <EditText
-            android:id="@+id/code_digit_2"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:maxLength="1"
-            android:gravity="center"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/square_border"/>
-        <EditText
-            android:id="@+id/code_digit_3"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:maxLength="1"
-            android:gravity="center"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/square_border"/>
-        <EditText
-            android:id="@+id/code_digit_4"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:maxLength="1"
-            android:gravity="center"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/square_border"/>
-        <EditText
-            android:id="@+id/code_digit_5"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:maxLength="1"
-            android:gravity="center"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/square_border"/>
-        <EditText
-            android:id="@+id/code_digit_6"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:inputType="number"
-            android:maxLength="1"
-            android:gravity="center"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/square_border"/>
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/image_check"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/visto"
+        android:layout_marginTop="10dp"/>
 
     <Button
-        android:id="@+id/button_verify_code"
+        android:id="@+id/button_fazer_login"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="30dp"
-        android:text="Verificar Código"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="100dp"
+        android:text="Fazer Login"
+        android:textSize="20sp"
         android:background="@drawable/botao_arrendodado"
-        android:onClick="onVerifyCodeClicked" />
-
-
+        android:textColor="#FFFFFF"
+        android:onClick="onLoginClicked"/>
 </LinearLayout>

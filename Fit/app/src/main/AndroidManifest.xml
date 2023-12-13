@@ -22,7 +22,7 @@
             android:name=".home"
             android:exported="false" />
         <activity
-            android:name=".TelaRedefinirSenha04"
+            android:name=".TelaRedefinirSenha02"
             android:exported="false" />
         <activity
             android:name=".TelaRedefinirSenha03"
