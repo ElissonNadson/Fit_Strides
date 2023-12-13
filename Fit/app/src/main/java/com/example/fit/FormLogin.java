@@ -34,7 +34,6 @@ public class FormLogin extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         editEmail = findViewById(R.id.edit_Email);
         editSenha = findViewById(R.id.edit_Password);
-        rememberMe = findViewById(R.id.remember_me);
         bt_entrar = findViewById(R.id.bt_entrar);
         bt_redefinirSenha = findViewById(R.id.bt_redefinirSenha);
         bt_register = findViewById(R.id.bt_register);

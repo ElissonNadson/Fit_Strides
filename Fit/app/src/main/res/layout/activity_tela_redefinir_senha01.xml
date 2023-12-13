@@ -60,4 +60,12 @@
         android:textColor="#FFFFFF"
         android:backgroundTint="#1EACDE"
         android:onClick="onredefinirsenhaClicked"  />
+    <Button
+        android:id="@+id/bt_proceed_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Fazer Login"
+        android:visibility="gone" />
+
 </LinearLayout>

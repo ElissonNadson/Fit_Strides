@@ -3,6 +3,7 @@ package com.example.fit;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +17,7 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
     private EditText editEmail;
     private ImageButton btVoltar;
     private Button btRedefinirSenha;
+    private Button btFazerLogin; // Botão para ir à tela de login
     private FirebaseAuth mAuth;
 
     @Override
@@ -23,12 +25,23 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_redefinir_senha01);
 
+        initViews();
+        setupFirebaseAuth();
+        setupListeners();
+    }
+
+    private void initViews() {
         editEmail = findViewById(R.id.caixadeemail);
         btVoltar = findViewById(R.id.bt_voltar);
         btRedefinirSenha = findViewById(R.id.bt_redefinirsenha2);
+        btFazerLogin = findViewById(R.id.bt_proceed_to_login); // Inicialização do novo botão
+    }
 
+    private void setupFirebaseAuth() {
         mAuth = FirebaseAuth.getInstance();
+    }
 
+    private void setupListeners() {
         btRedefinirSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +53,14 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish(); // Fecha a tela atual e volta para a tela anterior
+            }
+        });
+
+        btFazerLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TelaRedefinirSenha01.this, FormLogin.class));
+                finish();
             }
         });
     }
@@ -57,8 +78,10 @@ public class TelaRedefinirSenha01 extends AppCompatActivity {
                 Toast.makeText(TelaRedefinirSenha01.this,
                         "Instruções para redefinição de senha foram enviadas para seu e-mail.",
                         Toast.LENGTH_LONG).show();
-                // Após enviar o e-mail você pode querer redirecionar o usuário para a tela de login
-                // ou dar a opção dele verificar o e-mail e digitar a nova senha.
+
+                // Faz o botão aparecer após o e-mail ser enviado com sucesso
+                btRedefinirSenha.setVisibility(View.GONE); // Esconde o botão de redefinição de senha
+                btFazerLogin.setVisibility(View.VISIBLE); // Mostra o botão Fazer Login
             } else {
                 Toast.makeText(TelaRedefinirSenha01.this,
                         "Falha ao enviar e-mail de redefinição de senha.",
