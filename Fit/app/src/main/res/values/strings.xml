@@ -117,5 +117,22 @@
     <string name="icone_perfil_padrao_desc">Ícone de perfil padrão</string>
     <string name="adicione_imagem_perfil">Adicione uma imagem de perfil tocando abaixo</string>
 
+    <string name="dContadorPassos">Contador de Passos</string>
+
+    <string name="dIconeCont">Icone Homem Correndo</string>
+
+    <string name="caloria">Kcal</string>
+
+    <string name="dcal">Icone caloria</string>
+
+    <string name="sinalDeMenos">-</string>
+
+    <string name="dSinalDeMenos">Sinal de Menos</string>
+
+    <string name="botaoReset">Resetar</string>
+
+    <string name="sBotaoReset">Botão para Resetar</string>
+
+
 
 </resources>
