@@ -20,17 +20,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fit"
         tools:targetApi="31">
+
         <activity
             android:name=".pedometro"
             android:exported="false" />
         <activity
             android:name=".DiarioDeAgua01"
             android:exported="false" />
-
         <activity
             android:name=".home"
             android:exported="false" />
-
         <activity
             android:name=".TelaRedefinirSenha01"
             android:exported="false" />
