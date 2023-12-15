@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagemintro2"
+    android:orientation="vertical"
+    tools:context=".TelaIntro02">
+
+
+    <FrameLayout
+        android:layout_width="332dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="300dp">
+
+        <View
+            android:id="@+id/retangulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/retangulo" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_tela_intro_2"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/botaoProximaTela"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/ripple_round"
+        android:padding="10dp"
+        android:src="@drawable/botaoseta" />
+
+
+</LinearLayout>

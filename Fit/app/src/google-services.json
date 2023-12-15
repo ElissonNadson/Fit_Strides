@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "322169664270",
+    "firebase_url": "https://fit-strides-default-rtdb.firebaseio.com",
+    "project_id": "fit-strides",
+    "storage_bucket": "fit-strides.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322169664270:android:63dda8be8cc3befe8d1d5f",
+        "android_client_info": {
+          "package_name": "com.example.fit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6pEMfPjzwWo-7d1h57T8JTMnF3wH6P2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
