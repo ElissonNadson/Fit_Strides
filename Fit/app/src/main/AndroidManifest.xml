@@ -25,6 +25,10 @@
         android:theme="@style/Theme.Fit"
         tools:targetApi="31">
         <activity
+            android:name=".Tela_Principal"
+            android:exported="false"
+            android:label="@string/title_activity_tela_principal" />
+        <activity
             android:name=".TelaPrincipal"
             android:exported="false" />
         <activity

@@ -86,7 +86,7 @@ public class FormLogin extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
                         Toast.makeText(FormLogin.this, "Login bem-sucedido.", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(FormLogin.this, home.class));
+                        startActivity(new Intent(FormLogin.this, TelaPrincipal.class));
                         finish();
                     } else {
                         Toast.makeText(FormLogin.this, "Falha na autenticação.", Toast.LENGTH_SHORT).show();

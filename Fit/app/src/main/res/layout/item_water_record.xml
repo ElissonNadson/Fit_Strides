@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F6F6F6"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgWaterIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_agua"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tvWaterTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:text="@string/_12_00_pm"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvWaterName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:text="Itens"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvWaterAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:text="@string/_250ml"
+        android:textStyle="bold"/>
+
+    <!-- Botão Editar -->
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_edit"
+        android:background="@null"/>
+
+    <!-- Botão Deletar -->
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_delete"
+        android:layout_marginStart="8dp"
+        android:background="@null"/>
+</LinearLayout>
