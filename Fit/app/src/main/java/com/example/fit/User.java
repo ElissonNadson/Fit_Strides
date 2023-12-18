@@ -1,27 +1,52 @@
 package com.example.fit;
 
+import java.util.List;
+import java.util.Map;
+
 public class User {
     private String nome;
     private String email;
     private String senha;
+    private boolean podeRedefinirSenha;
     private String genero;
-    private String age;
-    private String height;
-    private String weight;
+    private int altura; // em cm
+    private int peso; // em kg
+    private List<Map<String, Object>> registrosHidratacao; // Lista de registros de hidratação
 
+    // Construtor vazio necessário para o Firebase
     public User() {
     }
 
+    // Construtor existente
+    public User(String nome, String email, String senha, boolean podeRedefinirSenha,
+                String genero, int altura, int peso, List<Map<String, Object>> registrosHidratacao) {
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.podeRedefinirSenha = podeRedefinirSenha;
+        this.genero = genero;
+        this.altura = altura;
+        this.peso = peso;
+        this.registrosHidratacao = registrosHidratacao;
+    }
+
+    // Novo construtor adicionado
     public User(String nome, String email, String senha, String genero, String age, String height, String weight) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
         this.genero = genero;
-        this.age = age;
-        this.height = height;
-        this.weight = weight;
+        // Suponho que age seja um número em formato de texto, convertendo para inteiro
+        this.altura = Integer.parseInt(age);
+        // Convertendo altura de formato texto em metros para um número inteiro em centímetros
+        this.altura = (int) (Float.parseFloat(height) * 100);
+        // Convertendo peso de formato texto para um número inteiro em quilogramas
+        this.peso = (int) Float.parseFloat(weight);
+        // Inicialização das listas
+        this.registrosHidratacao = null;  // ou new ArrayList<>() se desejar inicializá-la como uma lista vazia;
     }
 
+    // Getters e setters
     public String getNome() {
         return nome;
     }
@@ -46,6 +71,14 @@ public class User {
         this.senha = senha;
     }
 
+    public boolean getPodeRedefinirSenha() {
+        return podeRedefinirSenha;
+    }
+
+    public void setPodeRedefinirSenha(boolean podeRedefinirSenha) {
+        this.podeRedefinirSenha = podeRedefinirSenha;
+    }
+
     public String getGenero() {
         return genero;
     }
@@ -54,27 +87,29 @@ public class User {
         this.genero = genero;
     }
 
-    public String getAge() {
-        return age;
+    public int getAltura() {
+        return altura;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setAltura(int altura) {
+        this.altura = altura;
     }
 
-    public String getHeight() {
-        return height;
+    public int getPeso() {
+        return peso;
     }
 
-    public void setHeight(String height) {
-        this.height = height;
+    public void setPeso(int peso) {
+        this.peso = peso;
     }
 
-    public String getWeight() {
-        return weight;
+    public List<Map<String, Object>> getRegistrosHidratacao() {
+        return registrosHidratacao;
     }
 
-    public void setWeight(String weight) {
-        this.weight = weight;
+    public void setRegistrosHidratacao(List<Map<String, Object>> registrosHidratacao) {
+        this.registrosHidratacao = registrosHidratacao;
     }
+
+    // Mais métodos e lógica conforme necessário para a sua aplicação
 }

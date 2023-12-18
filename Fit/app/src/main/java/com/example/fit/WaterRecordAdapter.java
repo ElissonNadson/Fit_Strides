@@ -21,7 +21,6 @@ public class WaterRecordAdapter extends RecyclerView.Adapter<WaterRecordAdapter.
 
     public interface OnItemClickListener {
         void onEditClick(int position);
-
         void onDeleteClick(int position);
     }
 
@@ -44,22 +43,21 @@ public class WaterRecordAdapter extends RecyclerView.Adapter<WaterRecordAdapter.
     @Override
     public void onBindViewHolder(@NonNull WaterRecordViewHolder holder, int position) {
         WaterRecord waterRecord = waterRecords.get(position);
-        // Configurar os dados para o item
+        // Configure the data for the item
         holder.imgWaterIcon.setImageResource(waterRecord.getIconResId());
         holder.tvWaterTime.setText(waterRecord.getTime());
         holder.tvWaterName.setText(waterRecord.getName());
         holder.tvWaterAmount.setText(waterRecord.getAmount());
 
-        // Configurar cliques nos botões (editar e deletar)
         holder.btnEdit.setOnClickListener(view -> {
             if (listener != null) {
-                listener.onEditClick(position);
+                listener.onEditClick(holder.getAdapterPosition());
             }
         });
 
         holder.btnDelete.setOnClickListener(view -> {
             if (listener != null) {
-                listener.onDeleteClick(position);
+                listener.onDeleteClick(holder.getAdapterPosition());
             }
         });
     }
@@ -69,7 +67,7 @@ public class WaterRecordAdapter extends RecyclerView.Adapter<WaterRecordAdapter.
         return waterRecords.size();
     }
 
-    public static class WaterRecordViewHolder extends RecyclerView.ViewHolder {
+    public class WaterRecordViewHolder extends RecyclerView.ViewHolder {
         ImageView imgWaterIcon;
         TextView tvWaterTime;
         TextView tvWaterName;

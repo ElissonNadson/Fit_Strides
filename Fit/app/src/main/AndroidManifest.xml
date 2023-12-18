@@ -34,12 +34,8 @@
         <activity
             android:name=".pedometro"
             android:exported="false" />
-        <activity
-            android:name=".DiarioDeAgua01"
-            android:exported="false" />
-        <activity
-            android:name=".home"
-            android:exported="false" />
+
+
         <activity
             android:name=".TelaRedefinirSenha01"
             android:exported="false" />

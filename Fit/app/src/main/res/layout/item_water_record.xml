@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:background="#F6F6F6"
-    android:padding="20dp"
+    android:padding="10dp"
     android:gravity="center">
 
     <ImageView
@@ -18,46 +18,44 @@
 
     <TextView
         android:id="@+id/tvWaterTime"
-        android:layout_width="0dp"
+        android:layout_width="15dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="1dp"
         android:layout_weight="1"
         android:text="@string/_12_00_pm"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvWaterName"
-        android:layout_width="0dp"
+        android:layout_width="101dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_weight="1"
-        android:layout_marginStart="8dp"
         android:text="Itens"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvWaterAmount"
-        android:layout_width="0dp"
+        android:layout_width="4dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_weight="1"
-        android:layout_marginStart="8dp"
         android:text="@string/_250ml"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
-    <!-- Botão Editar -->
+
     <ImageButton
         android:id="@+id/btnEdit"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_edit"
-        android:background="@null"/>
+        android:background="@null"
+        android:src="@drawable/ic_edit" />
 
-    <!-- Botão Deletar -->
     <ImageButton
         android:id="@+id/btnDelete"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_delete"
-        android:layout_marginStart="8dp"
-        android:background="@null"/>
+        android:layout_marginStart="1dp"
+        android:background="@null"
+        android:src="@drawable/ic_delete" />
 </LinearLayout>

@@ -160,4 +160,13 @@
     <string name="_12_00_pm">12:00 PM</string>
     <string name="nome_do_item">Nome do Item</string>
     <string name="_250ml">250ml</string>
+    <string name="copo_200ml">Copo 200ml</string>
+    <string name="copo_300ml">Copo 300ml</string>
+    <string name="garrafa_300ml">Garrafa 300ml</string>
+    <string name="personalizado">Personalizado</string>
+    <string name="seu_registro_de_hoje">Seu Registro de Hoje</string>
+    <string name="relat_rio">Relatório</string>
+    <string name="lembrete">Lembrete</string>
+    <string name="progress_text">%d ml</string>
+
 </resources>
