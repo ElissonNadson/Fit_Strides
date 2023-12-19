@@ -21,7 +21,6 @@ public class TelaLogo extends AppCompatActivity {
 
                 Intent intent = new Intent(TelaLogo.this, TelaIntro01.class);
                 startActivity(intent);
-                finish();
             }
         }, TEMPO_DE_CARREGAMENTO);
     }

@@ -24,6 +24,7 @@ public class TelaIntro02 extends AppCompatActivity {
 
                 Intent intent = new Intent(TelaIntro02.this, FormLogin.class);
                 startActivity(intent);
+
             }
         });
     }

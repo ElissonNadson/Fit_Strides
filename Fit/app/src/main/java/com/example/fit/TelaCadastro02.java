@@ -80,6 +80,7 @@ public class TelaCadastro02 extends AppCompatActivity {
         // Configuração de ajuste contínuo para os botões
         view.setOnTouchListener((v, event) -> {
             switch (event.getAction()) {
+
                 case MotionEvent.ACTION_DOWN:
                     if (isAgeValid && isHeightValid && isWeightValid) {
                         handler.post(action);

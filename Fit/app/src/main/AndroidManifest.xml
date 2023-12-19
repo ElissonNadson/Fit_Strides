@@ -24,17 +24,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fit"
         tools:targetApi="31">
+
+        <activity
+            android:name=".TelaLogo"
+            android:exported="true"
+            android:label="@string/title_activity_tela_logo"
+            android:theme="@style/Theme.Fit">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Tela_Principal"
+            android:exported="false"
+            android:label="@string/title_activity_tela_principal" />
         <activity
             android:name=".TelaPrincipal"
             android:exported="false" />
+
+        <activity
+            android:name=".FormLogin"
+            android:exported="false"
+            android:label="@string/title_activity_form_login"
+            android:theme="@style/Theme.Fit" />
         <activity
             android:name=".pedometro"
-            android:exported="false" />
-        <activity
-            android:name=".DiarioDeAgua01"
-            android:exported="false" />
-        <activity
-            android:name=".home"
             android:exported="false" />
         <activity
             android:name=".TelaRedefinirSenha01"
@@ -51,22 +67,6 @@
         <activity
             android:name=".TelaIntro01"
             android:exported="false" />
-        <activity
-            android:name=".TelaLogo"
-            android:exported="true"
-            android:label="@string/title_activity_tela_logo"
-            android:theme="@style/Theme.Fit">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".FormLogin"
-            android:exported="false"
-            android:label="@string/title_activity_form_login"
-            android:theme="@style/Theme.Fit" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

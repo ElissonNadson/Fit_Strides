@@ -137,9 +137,6 @@
     <string name="titulo_tela_intro_2">Conte seus passos!</string>
 
 
-
-
-
     <!-- Strings para os títulos de BottomNavigationView -->
     <string name="home">Home</string>
     <string name="passos">Passos</string>
@@ -149,6 +146,27 @@
     <string name="historico">Histórico</string>
     <string name="hoje">Hoje</string>
     <string name="configuracoes">Configurações</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="litros_consumidos">litros consumidos</string>
+    <string name="incrementar">incrementar agua</string>
+    <string name="title_activity_tela_principal">Tela_Principal</string>
+
+    <string name="title_passos">Passos</string>
+    <string name="title_agua">Água</string>
+    <string name="meta_de_hidrata_o">Meta de hidratação</string>
+    <string name="registro_de_hoje">Registro de Hoje</string>
+    <string name="_12_00_pm">12:00 PM</string>
+    <string name="nome_do_item">Nome do Item</string>
+    <string name="_250ml">250ml</string>
+    <string name="copo_200ml">Copo 200ml</string>
+    <string name="copo_300ml">Copo 300ml</string>
+    <string name="garrafa_300ml">Garrafa 300ml</string>
+    <string name="personalizado">Personalizado</string>
+    <string name="seu_registro_de_hoje">Seu Registro de Hoje</string>
+    <string name="relat_rio">Relatório</string>
+    <string name="lembrete">Lembrete</string>
+    <string name="progress_text">%d ml</string>
 
 </resources>

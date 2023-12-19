@@ -86,11 +86,25 @@ public class FormLogin extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
                         Toast.makeText(FormLogin.this, "Login bem-sucedido.", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(FormLogin.this, home.class));
+                        startActivity(new Intent(FormLogin.this, TelaPrincipal.class));
                         finish();
                     } else {
                         Toast.makeText(FormLogin.this, "Falha na autenticação.", Toast.LENGTH_SHORT).show();
                     }
                 });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            // O usuário está logado, redirecione-o para a tela principal.
+            Intent i = new Intent(FormLogin.this, TelaPrincipal.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(i);
+            finish();
+        }
+        // Se o usuário for nulo, a atividade de login iniciará normalmente permitindo que o usuário faça login manualmente.
     }
 }
