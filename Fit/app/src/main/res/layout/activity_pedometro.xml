@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -15,30 +19,75 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="108dp"
-            android:layout_height="155dp"
-            android:contentDescription="@string/dIconeCont"
+            android:id="@+id/Retangulo"
+            android:layout_width="match_parent"
+            android:layout_height="378dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/button_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.559"
-            app:layout_constraintStart_toEndOf="@+id/idTotalPassos"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.34"
-            app:srcCompat="@drawable/run" />
+            app:layout_constraintVertical_bias="0.002"
+            android:importantForAccessibility="no" />
+
+        <ImageView
+            android:id="@+id/ellipseImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ellipse_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="no" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:contentDescription="@string/dIconeCont"
+            app:layout_constraintBottom_toTopOf="@+id/idTotalPassos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/walk" />
 
         <TextView
             android:id="@+id/idCaloria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
+            android:textColor="@color/white"
             android:textSize="48sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.299"
+            app:layout_constraintHorizontal_bias="0.174"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/idTotalPassos"
-            app:layout_constraintVertical_bias="0.393" />
+            app:layout_constraintVertical_bias="0.156"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/distance"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            app:layout_constraintBottom_toTopOf="@+id/idCaloria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.154"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/location"
+            android:contentDescription="@string/dMostraDistancia" />
 
         <TextView
             android:id="@+id/idTotalPassos"
@@ -46,54 +95,107 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/dContadorPassos"
             android:text="0"
+            android:textColor="@color/white"
             android:textSize="48sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.363"
+            app:layout_constraintVertical_bias="0.139"
             tools:ignore="HardcodedText" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/dSinalDeMenos"
-            android:text="@string/sinalDeMenos"
+            android:contentDescription="@string/dMostraDistancia"
+            android:text="@string/km"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCaloria"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/idDistancia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/dMostraDistancia"
+            android:text="0"
+            android:textColor="@color/white"
             android:textSize="48sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/idCaloria"
-            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.812"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.671" />
+            app:layout_constraintVertical_bias="0.355"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/foguinho"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="140dp"
+            app:layout_constraintBottom_toTopOf="@+id/idDistancia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/fire"
+            android:importantForAccessibility="no" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/dcal"
-            android:text="@string/caloria"
-            android:textSize="48sp"
+            android:text="@string/passos"
+            android:textColor="@color/white"
+            android:textSize="35sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.511"
-            app:layout_constraintStart_toEndOf="@+id/idCaloria"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.311" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTotalPassos"
+            app:layout_constraintVertical_bias="0.0" />
 
-        <Button
-            android:id="@+id/idReset"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/dcal"
+            android:text="@string/caloria"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idDistancia"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/idReset"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@drawable/circurlar_button_background"
             android:contentDescription="@string/sBotaoReset"
-            android:text="@string/botaoReset"
+            android:src="@drawable/refresh"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.872" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.core.widget.NestedScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
