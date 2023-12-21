@@ -13,10 +13,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fit.R;
+import com.example.fit.SharedViewModel;
 import com.example.fit.WaterRecord;
 import com.example.fit.WaterRecordAdapter;
 import com.mikhaellopez.circularprogressbar.CircularProgressBar;
@@ -42,11 +45,11 @@ public class AguaFragment extends Fragment {
     private WaterRecordAdapter adaptadorRegistroAgua;
     private List<WaterRecord> registrosAgua;
     private FloatingActionButton botaoAdicionar, botaoOpcao500ml, botaoOpcaoPersonalizada, botaoOpcao200ml, botaoOpcao300ml;
-    private int currentProgress = 0;
 
     private CircularProgressBar circularProgressBar;
     private TextView tvProgressText;
     private TextView tvDailyWaterGoal;
+    private SharedViewModel sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
 
 
     private static final String KEY_CURRENT_PROGRESS = "current_progress";
@@ -152,6 +155,9 @@ public class AguaFragment extends Fragment {
                                                 updateProgress(-amountToDelete);
 
                                                 Toast.makeText(getActivity(), "Registro deletado com sucesso", Toast.LENGTH_SHORT).show();
+
+                                                sharedViewModel.decrementProgress(Integer.parseInt(recordToDelete.getAmount().replace("ml", "")));
+
                                             })
                                             .addOnFailureListener(e -> Toast.makeText(getActivity(), "Erro ao deletar registro", Toast.LENGTH_SHORT).show());
                                 } else {
@@ -214,8 +220,23 @@ public class AguaFragment extends Fragment {
         circularProgressBar = view.findViewById(R.id.circularProgressBar);
         tvProgressText = view.findViewById(R.id.tv_water_intake_amount);
         tvDailyWaterGoal = view.findViewById(R.id.tv_daily_water_goal);
-        updateProgressBar(currentProgress);
-        setDailyWaterGoal();
+    setDailyWaterGoal();
+
+
+        sharedViewModel.getCurrentProgress().observe(getViewLifecycleOwner(), new Observer<Integer>() {
+            @Override
+            public void onChanged(Integer progress) {
+                updateProgressBar(progress);
+            }
+        });
+
+// E se sua Meta Diária de Água também estiver na ViewModel:
+        sharedViewModel.getDailyWaterGoal().observe(getViewLifecycleOwner(), new Observer<Integer>() {
+            @Override
+            public void onChanged(Integer goal) {
+                updateDailyWaterGoalUI(goal);
+            }
+        });
 
 
         return view;
@@ -265,39 +286,43 @@ public class AguaFragment extends Fragment {
             SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
             String currentTime = timeFormat.format(Calendar.getInstance().getTime());
 
+            // Preparar os dados do registro para o Firestore
             Map<String, Object> recordData = new HashMap<>();
             recordData.put("iconResId", R.drawable.ic_agua);
             recordData.put("time", currentTime);
             recordData.put("name", "Copo de água");
-            recordData.put("amount", amount.replace("ml", "")); // Assumindo que você quer salvar apenas o número
+            recordData.put("amount", amount.replace("ml", "")); // Salvar apenas o número
 
             db.collection("Users").document(userId)
                     .collection("registrosConsumo")
                     .add(recordData)
                     .addOnSuccessListener(documentReference -> {
-                        // Aqui você obtém o ID do documento e pode prosseguir com a criação do WaterRecord e atualização da UI
+                        // Aqui você obtém o ID do documento e pode prosseguir com a adição do WaterRecord
                         String documentId = documentReference.getId();
                         WaterRecord newRecord = new WaterRecord(R.drawable.ic_agua, currentTime, "Copo de água", amount, documentId);
 
+                        // Adicionar o novo registro ao início da lista e notificar o adaptador
                         registrosAgua.add(0, newRecord);
                         adaptadorRegistroAgua.notifyItemInserted(0);
-
-                        // Atualizações adicionais da UI: scroll, toast, progresso e escondendo botões
                         recyclerView.scrollToPosition(0);
-                        Toast.makeText(getActivity(), amount + " adicionado", Toast.LENGTH_SHORT).show();
 
+                        // Atualizar a UI com o novo valor e esconder os botões se necessário
+                        Toast.makeText(getActivity(), amount + " adicionado", Toast.LENGTH_SHORT).show();
                         botaoOpcao500ml.setVisibility(View.GONE);
                         botaoOpcaoPersonalizada.setVisibility(View.GONE);
                         botaoOpcao200ml.setVisibility(View.GONE);
                         botaoOpcao300ml.setVisibility(View.GONE);
 
-                        currentProgress += Integer.parseInt(amount.replace("ml", ""));
-                        updateProgressBar(currentProgress);
+                        // Atualizar o progresso no SharedViewModel
+                        sharedViewModel.incrementProgress(Integer.parseInt(amount.replace("ml", "")));
+
                     })
                     .addOnFailureListener(e -> {
+                        // Mostrar mensagem de erro
                         Toast.makeText(getActivity(), "Erro ao adicionar registro", Toast.LENGTH_SHORT).show();
                     });
         } else {
+            // Usuário não está logado
             Toast.makeText(getActivity(), "Usuário não está logado.", Toast.LENGTH_SHORT).show();
         }
     }
@@ -377,9 +402,10 @@ public class AguaFragment extends Fragment {
         circularProgressBar.setProgress(progress);
         tvProgressText.setText(getString(R.string.progress_text, progress));
     }
-
     private void updateProgress(int amount) {
-        currentProgress += amount;
-        updateProgressBar(currentProgress);
+        // Sua lógica atual pode permanecer se você também precisa fazer atualizações locais,
+        // caso contrário, apenas use sharedViewModel para incrementar o progresso.
+        sharedViewModel.incrementProgress(amount);
+        // Não precisa mais chamar updateProgressBar aqui, pois o observer cuida disso
     }
 }
