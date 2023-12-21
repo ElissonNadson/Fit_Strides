@@ -97,14 +97,17 @@ public class FormLogin extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+       // irebaseUser user = FirebaseAuth.getInstance().getCurrentUser();\\
+       FirebaseUser user = mAuth.getCurrentUser();
         if (user != null) {
             // O usuário está logado, redirecione-o para a tela principal.
-            Intent i = new Intent(FormLogin.this, TelaPrincipal.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(i);
+            Intent intent = new Intent(FormLogin.this, TelaPrincipal.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+
+
+
             finish();
         }
-        // Se o usuário for nulo, a atividade de login iniciará normalmente permitindo que o usuário faça login manualmente.
     }
 }
