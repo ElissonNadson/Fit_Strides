@@ -93,4 +93,21 @@ public class FormLogin extends AppCompatActivity {
                     }
                 });
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+       // irebaseUser user = FirebaseAuth.getInstance().getCurrentUser();\\
+       FirebaseUser user = mAuth.getCurrentUser();
+        if (user != null) {
+            // O usuário está logado, redirecione-o para a tela principal.
+            Intent intent = new Intent(FormLogin.this, TelaPrincipal.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+
+
+
+            finish();
+        }
+    }
 }

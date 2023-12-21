@@ -168,5 +168,7 @@
     <string name="relat_rio">Relatório</string>
     <string name="lembrete">Lembrete</string>
     <string name="progress_text">%d ml</string>
+    <string name="km">Km</string>
+    <string name="dMostraDistancia">Mostra a distancia Percorrida</string>
 
 </resources>

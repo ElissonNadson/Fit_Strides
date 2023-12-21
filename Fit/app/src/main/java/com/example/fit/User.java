@@ -10,7 +10,7 @@ public class User {
     private boolean podeRedefinirSenha;
     private String genero;
     private int altura; // em cm
-    private int peso; // em kg
+    private double peso; // em kg
     private List<Map<String, Object>> registrosHidratacao; // Lista de registros de hidratação
 
     // Construtor vazio necessário para o Firebase
@@ -95,11 +95,11 @@ public class User {
         this.altura = altura;
     }
 
-    public int getPeso() {
+    public Double getPeso() {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 

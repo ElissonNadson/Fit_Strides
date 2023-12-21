@@ -1,16 +1,23 @@
 package com.example.fit.ui.home;
 
+// Importações necessárias
+import android.content.DialogInterface;
+import android.content.Intent;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import androidx.appcompat.app.AlertDialog;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-
+import com.example.fit.R;
 import com.example.fit.databinding.FragmentHomeBinding;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.example.fit.FormLogin;
 
 public class HomeFragment extends Fragment {
 
@@ -26,7 +33,32 @@ public class HomeFragment extends Fragment {
 
         final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        // Configurando o botão de logout
+        FloatingActionButton btnLogout = root.findViewById(R.id.fab_logout);
+        btnLogout.setOnClickListener(view -> {
+            showLogoutConfirmationDialog();
+        });
+
         return root;
+    }
+
+    private void showLogoutConfirmationDialog() {
+        new AlertDialog.Builder(getContext())
+                .setMessage("Você tem certeza que deseja deslogar?")
+                .setPositiveButton("Deslogar", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        FirebaseAuth.getInstance().signOut(); // Desloga o usuário
+
+                        Intent intent = new Intent(getActivity(), FormLogin.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK  | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        intent.putExtra("logout", true); // Indica que o usuário fez logout
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("Cancelar", null)
+                .show();
     }
 
     @Override
