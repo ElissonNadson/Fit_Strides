@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.agua.AguaFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_daily_water_consumption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Meta de hidratação"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_top_bar" />
+    <TextView
+        android:id="@+id/tv_daily_water_goal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Carregando meta de hidratação..."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_daily_water_consumption" />
+
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="185dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="8dp"
+        app:cpb_background_progressbar_color="#e0e0e0"
+        app:cpb_background_progressbar_width="4dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#0022FF"
+        app:cpb_progressbar_width="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_daily_water_goal"
+        android:progress="0"/>
+
+    />
+
+    <TextView
+        android:id="@+id/tv_water_intake_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#2196F3"
+        app:layout_constraintBottom_toBottomOf="@id/circularProgressBar"
+        app:layout_constraintLeft_toLeftOf="@id/circularProgressBar"
+        app:layout_constraintRight_toRightOf="@id/circularProgressBar"
+        app:layout_constraintTop_toTopOf="@id/circularProgressBar" />
+
+    <TextView
+        android:id="@+id/tv_daily_goal_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/seu_registro_de_hoje"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fab_add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_today_records"
+        android:layout_width="393dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_daily_water_goal"
+        app:layout_constraintStart_toStartOf="@+id/tv_daily_water_goal"
+        app:layout_constraintTop_toBottomOf="@id/tv_daily_goal_subtitle"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#73C1FF"
+        app:fabSize="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circularProgressBar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_option_500ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_garrafa_500ml"
+        app:layout_constraintTop_toTopOf="@id/fab_add"
+        app:layout_constraintStart_toEndOf="@id/fab_add"
+        android:layout_marginStart="16dp"
+        android:visibility="gone"
+        app:tint="@null"
+        app:backgroundTint="#ABD8FB"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_option_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_personalizado"
+        app:layout_constraintTop_toBottomOf="@id/fab_add"
+        app:layout_constraintStart_toStartOf="@id/fab_add"
+        android:layout_marginTop="16dp"
+        app:backgroundTint="#ABD8FB"
+        app:tint="@null"
+        android:visibility="gone"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_option_200ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_copo_200ml"
+        app:layout_constraintTop_toTopOf="@id/fab_add"
+        app:layout_constraintEnd_toStartOf="@id/fab_add"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:backgroundTint="#ABD8FB"
+        app:tint="@null"
+
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_option_300ml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_copo_300ml"
+        app:layout_constraintBottom_toTopOf="@id/fab_add"
+        app:layout_constraintEnd_toEndOf="@id/fab_add"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:backgroundTint="#ABD8FB"
+        app:tint="@null"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

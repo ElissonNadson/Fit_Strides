@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/telacadastro01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+
+    <ImageButton
+        android:id="@+id/botao_voltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/iconevoltar"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt_voltar"
+        android:layout_marginTop="16dp"
+        android:text="Fit Strides"
+        android:textSize="54dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+
+        />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/nome_completo"
+        android:hint="@string/name"
+        android:textColorHint="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/input"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:hint="@string/email"
+        android:textColorHint="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/input"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp" />
+
+
+    <EditText
+        android:id="@+id/senha"
+        android:hint="@string/password"
+        android:textColorHint="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/input"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender" />
+
+
+        <RadioGroup
+            android:id="@+id/group_genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/radio_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/male" />
+
+
+            <RadioButton
+                android:id="@+id/radio_feminino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botao_continuar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/continue_registration"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+
+        />
+</LinearLayout>

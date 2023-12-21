@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".TelaIntro01">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo ao "
+        android:textColor="#000000"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/tituloFitStrides2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FitStrides"
+        android:textColor="#0000FF"
+        android:textSize="36sp"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hidratação e Passos, ao seu alcance."
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/descricao_agua3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Água Simples:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/descricao_agua2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acompanhe sua ingestão diária."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="4dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/descricao_passosb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contagem de Passos Fácil:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="40dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/descricao_passos2c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transforme cada passo em conquista."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/botaoProximaTela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Começar agora"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ripple_round"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+</LinearLayout>
